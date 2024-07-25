@@ -3,6 +3,7 @@ package app.daazi.aluno.appclientevip.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -13,12 +14,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import app.daazi.aluno.appclientevip.R;
+import app.daazi.aluno.appclientevip.api.AppUtil;
 import app.daazi.aluno.appclientevip.controller.ClienteController;
 import app.daazi.aluno.appclientevip.model.Cliente;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Cliente cliente;
+    Cliente clienteFake;
+
+    private SharedPreferences preferences;
 
     TextView txtRecuperarSenha, txtLerPolitica;
     EditText editEmail, editSenha;
@@ -41,6 +45,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (isFormularioOK = validarFormulario()) {
 
                     if (validarDadosDoUsuario()) {
+
+                        salvarSharedPreferences();
 
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
@@ -105,6 +111,10 @@ public class LoginActivity extends AppCompatActivity {
         btnSejaVip = findViewById(R.id.btnSejaVip);
 
         isFormularioOK = false;
+
+        clienteFake = ClienteController.getClienteFake();
+
+        restaurarSharedPreferences();
     }
 
     public void lembrarSenha(View view) {
@@ -114,6 +124,23 @@ public class LoginActivity extends AppCompatActivity {
 
     public boolean validarDadosDoUsuario() {
 
-        return ClienteController.validarDadosDoCliente();
+        return ClienteController.validarDadosDoCliente(clienteFake, editEmail.getText().toString(), editSenha.getText().toString());
+    }
+
+    private void salvarSharedPreferences() {
+
+        preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
+        SharedPreferences.Editor dados = preferences.edit();
+        dados.putBoolean("loginAutomatico", isLembrarSenha);
+        dados.putString("emailCliente", editEmail.getText().toString());
+        dados.apply();
+
+    }
+
+    private void restaurarSharedPreferences() {
+
+        preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
+        isLembrarSenha = preferences.getBoolean("loginAutomatico", false);
+
     }
 }
