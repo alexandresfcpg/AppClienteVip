@@ -1,4 +1,4 @@
-package app.daazi.aluno.appclientevip;
+package app.daazi.aluno.appclientevip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import app.daazi.aluno.appclientevip.R;
 import app.daazi.aluno.appclientevip.api.AppUtil;
 
 public class SplashActivity extends AppCompatActivity {

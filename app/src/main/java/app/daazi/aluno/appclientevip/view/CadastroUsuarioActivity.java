@@ -1,4 +1,4 @@
-package app.daazi.aluno.appclientevip;
+package app.daazi.aluno.appclientevip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import app.daazi.aluno.appclientevip.R;
 
 public class CadastroUsuarioActivity extends AppCompatActivity {
 
