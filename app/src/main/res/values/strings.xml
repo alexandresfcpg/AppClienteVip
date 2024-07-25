@@ -8,6 +8,16 @@
 
     <!-- formulario de cadastro de usuarios -->
 
+    <string name="txtLogin">Login</string>
+    <string name="txtLembrar">Lembrar</string>
+    <string name="txtRecuperarSenha">Recuperar Senha</string>
+    <string name="btnAcessar">ACESSAR</string>
+    <string name="btnSejaVip">SEJA VIP</string>
+    <string name="txtVersaoApp">Versão V1.0</string>
+    <string name="txtLerPolitica"><![CDATA[Ler Política de Privacidade & Termos de Uso.]]></string>
+
+    <!-- formulario de cadastro de usuarios -->
+
     <string name="txtCadastro">Cadastro</string>
     <string name="txtNome">Nome</string>
     <string name="txtHintNome">Digite seu primeiro nome...</string>
