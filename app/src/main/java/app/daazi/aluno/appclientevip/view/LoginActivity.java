@@ -2,6 +2,7 @@ package app.daazi.aluno.appclientevip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import app.daazi.aluno.appclientevip.R;
+import app.daazi.aluno.appclientevip.controller.ClienteController;
 import app.daazi.aluno.appclientevip.model.Cliente;
 
 public class LoginActivity extends AppCompatActivity {
@@ -23,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     CheckBox ckLembrar;
     Button btnAcessar, btnSejaVip;
 
-    boolean isFormularioOK, lembrarSenha;
+    boolean isFormularioOK, isLembrarSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +38,19 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                isFormularioOK = validarFormulario();
+                if (isFormularioOK = validarFormulario()) {
 
+                    if (validarDadosDoUsuario()) {
+
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                        return;
+
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Verifique os dados...", Toast.LENGTH_LONG).show();
+                    }
+                }
             }
         });
 
@@ -66,13 +79,13 @@ public class LoginActivity extends AppCompatActivity {
 
         boolean retorno = true;
 
-        if (TextUtils.isEmpty(editEmail.getText().toString())){
+        if (TextUtils.isEmpty(editEmail.getText().toString())) {
             editEmail.setError("*");
             editEmail.requestFocus();
             retorno = false;
         }
 
-        if (TextUtils.isEmpty(editSenha.getText().toString())){
+        if (TextUtils.isEmpty(editSenha.getText().toString())) {
             editSenha.setError("*");
             editSenha.requestFocus();
             retorno = false;
@@ -96,6 +109,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void lembrarSenha(View view) {
 
-        lembrarSenha = ckLembrar.isChecked();
+        isLembrarSenha = ckLembrar.isChecked();
+    }
+
+    public boolean validarDadosDoUsuario() {
+
+        return ClienteController.validarDadosDoCliente();
     }
 }
