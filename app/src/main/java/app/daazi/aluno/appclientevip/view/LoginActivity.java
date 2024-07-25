@@ -60,6 +60,18 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        btnSejaVip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(LoginActivity.this, ClienteVip.class);
+                startActivity(intent);
+                finish();
+                return;
+
+            }
+        });
+
         txtRecuperarSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

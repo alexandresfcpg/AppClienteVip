@@ -6,7 +6,7 @@
     <string name="btnCadastro">CADASTRAR</string>
     <string name="btnVoltar">VOLTAR</string>
 
-    <!-- formulario de cadastro de usuarios -->
+    <!-- formulario de login -->
 
     <string name="txtLogin">Login</string>
     <string name="txtLembrar">Lembrar</string>
@@ -15,6 +15,16 @@
     <string name="btnSejaVip">SEJA VIP</string>
     <string name="txtVersaoApp">Versão V1.0</string>
     <string name="txtLerPolitica"><![CDATA[Ler Política de Privacidade & Termos de Uso.]]></string>
+
+    <!-- tela novo cliente VIP -->
+
+    <string name="txtNovoVip">Novo VIP</string>
+    <string name="txtPrimeiroNome">Primeiro Nome</string>
+    <string name="txtSobreNome">Sobrenome</string>
+    <string name="txtHintSobreNome">Digite seu sobrenome...</string>
+    <string name="txtPessoaFisica">Pessoa Física</string>
+    <string name="btnSalvarContinuar">SALVAR E CONTINUAR</string>
+    <string name="btnCancelar">CANCELAR</string>
 
     <!-- formulario de cadastro de usuarios -->
 
