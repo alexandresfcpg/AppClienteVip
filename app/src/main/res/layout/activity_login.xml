@@ -46,7 +46,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/txtHintEmail" />
+        android:hint="@string/txtHintEmail" />
 
     <TextView
         android:id="@+id/txtSenha"
@@ -66,7 +66,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:inputType="numberPassword"
-        android:text="@string/txtHintSenhaA" />
+        android:hint="@string/txtHintSenhaA" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -80,6 +80,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:onClick="lembrarSenha"
             android:layout_gravity="center_horizontal"
             android:text="@string/txtLembrar"
             android:textStyle="bold" />
