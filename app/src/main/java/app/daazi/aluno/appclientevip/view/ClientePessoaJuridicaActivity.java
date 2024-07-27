@@ -156,6 +156,11 @@ public class ClientePessoaJuridicaActivity extends AppCompatActivity {
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
 
+        dados.putString("cnpj", editCnpj.getText().toString());
+        dados.putString("razaoSocial", editRazaoSocial.getText().toString());
+        dados.putString("dataAbertura", editDataAbertura.getText().toString());
+        dados.putBoolean("simplesNacional", isSimplesNacional);
+        dados.putBoolean("mei", isMei);
         dados.apply();
 
     }

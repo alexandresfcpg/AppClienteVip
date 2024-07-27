@@ -34,7 +34,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/txtHintNome" />
+        android:hint="@string/txtHintNome" />
 
     <TextView
         android:id="@+id/txtEmail"
@@ -52,7 +52,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
         android:ems="10"
-        android:text="@string/txtHintEmail"
+        android:hint="@string/txtHintEmail"
         android:inputType="textEmailAddress"/>
 
     <TextView
@@ -72,7 +72,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:inputType="numberPassword"
-        android:text="@string/txtHintSenhaA"/>
+        android:hint="@string/txtHintSenhaA"/>
 
     <TextView
         android:id="@+id/txtSenhaB"
@@ -91,7 +91,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:inputType="numberPassword"
-        android:text="@string/txtHintSenhaB"/>
+        android:hint="@string/txtHintSenhaB"/>
 
     <CheckBox
         android:id="@+id/ckTermo"

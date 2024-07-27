@@ -14,7 +14,6 @@ import app.daazi.aluno.appclientevip.R;
 public class CadastroUsuarioActivity extends AppCompatActivity {
 
     Button btnCadastro;
-
     EditText editNome, editEmail, editSenhaA, editSenhaB;
     CheckBox ckTermo;
     boolean isFormularioOK;

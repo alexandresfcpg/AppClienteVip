@@ -129,8 +129,9 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
 
+        dados.putString("cpf", editCpf.getText().toString());
+        dados.putString("nomeCompleto", editNomeCompleto.getText().toString());
         dados.apply();
-
     }
 
     private void restaurarSharedPreferences() {
