@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.shashank.sony.fancydialoglib.FancyAlertDialog;
 
 import app.daazi.aluno.appclientevip.R;
 import app.daazi.aluno.appclientevip.api.AppUtil;
@@ -86,9 +89,21 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "Carregando tela com a política de privacidade...",
-                        Toast.LENGTH_LONG).show();
-
+                FancyAlertDialog.Builder
+                        .with(LoginActivity.this)
+                        .setTitle("Política de Privacidade e Termos de Uso")
+                        .setBackgroundColor(Color.parseColor("#303F9F"))  // for @ColorRes use setBackgroundColorRes(R.color.colorvalue)
+                        .setMessage("Do you really want to Exit ?")
+                        .setNegativeBtnText("Discordo")
+                        .setPositiveBtnBackground(Color.parseColor("#FF4081"))  // for @ColorRes use setPositiveBtnBackgroundRes(R.color.colorvalue)
+                        .setPositiveBtnText("Concordo")
+                        .setNegativeBtnBackground(Color.parseColor("#4ECA25"))  // for @ColorRes use setNegativeBtnBackgroundRes(R.color.colorvalue)
+                        .isCancellable(true)
+                        .setIcon(R.mipmap.ic_launcher_round, View.VISIBLE)
+                        .onPositiveClicked(dialog -> Toast.makeText(LoginActivity.this, "Obrigado, seja bem-vindo e conclua o seu cadastro", Toast.LENGTH_SHORT).show())
+                        .onNegativeClicked(dialog -> Toast.makeText(LoginActivity.this, "Lamentamos, mas é necessário concordar com a política de privacidade e os termos de uso", Toast.LENGTH_SHORT).show())
+                        .build()
+                        .show();
             }
         });
     }
