@@ -14,7 +14,6 @@ import android.widget.EditText;
 import app.daazi.aluno.appclientevip.R;
 import app.daazi.aluno.appclientevip.api.AppUtil;
 import app.daazi.aluno.appclientevip.model.Cliente;
-import app.daazi.aluno.appclientevip.model.ClientePF;
 import app.daazi.aluno.appclientevip.model.ClientePJ;
 
 public class ClientePessoaJuridicaActivity extends AppCompatActivity {
