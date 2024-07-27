@@ -6,6 +6,7 @@
     <string name="btnCadastro">CADASTRAR</string>
     <string name="btnVoltar">VOLTAR</string>
 
+
     <!-- formulario de login -->
 
     <string name="txtLogin">Login</string>
@@ -15,6 +16,7 @@
     <string name="btnSejaVip">SEJA VIP</string>
     <string name="txtVersaoApp">Versão V1.0</string>
     <string name="txtLerPolitica"><![CDATA[Ler Política de Privacidade & Termos de Uso.]]></string>
+
 
     <!-- tela de recuparação de senha -->
 
@@ -32,6 +34,14 @@
     <string name="btnSalvarContinuar">SALVAR E CONTINUAR</string>
     <string name="btnCancelar">CANCELAR</string>
 
+
+    <!-- tela novo cliente pessoa fisica -->
+
+    <string name="txtCpf">CPF</string>
+    <string name="txtHintCpf">Digite seu CPF</string>
+    <string name="txtNomeCompleto">Nome Completo</string>
+    <string name="txtHintNomeCompleto">Nome completo igual do CPF...</string>
+
     <!-- tela novo cliente pessoa juridica -->
 
     <string name="txtPessoaJuridica">Pessoa Jurídica</string>
@@ -44,6 +54,7 @@
     <string name="txtSimplesNacional">Simples Nacional</string>
     <string name="txtMei">MEI</string>
     <string name="btnSalvarConcluir">SALVAR E CONCLUIR</string>
+
 
     <!-- formulario de cadastro de usuarios -->
 
