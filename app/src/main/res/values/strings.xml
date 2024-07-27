@@ -16,6 +16,12 @@
     <string name="txtVersaoApp">Versão V1.0</string>
     <string name="txtLerPolitica"><![CDATA[Ler Política de Privacidade & Termos de Uso.]]></string>
 
+    <!-- tela de recuparação de senha -->
+
+    <string name="txtHintEmailRecuperacao">Digite o e-mail cadastrado...</string>
+    <string name="btnRecuprar">RECUPERAR</string>
+
+
     <!-- tela novo cliente VIP -->
 
     <string name="txtNovoVip">Novo VIP</string>
@@ -25,6 +31,19 @@
     <string name="txtPessoaFisica">Pessoa Física</string>
     <string name="btnSalvarContinuar">SALVAR E CONTINUAR</string>
     <string name="btnCancelar">CANCELAR</string>
+
+    <!-- tela novo cliente pessoa juridica -->
+
+    <string name="txtPessoaJuridica">Pessoa Jurídica</string>
+    <string name="txtCnpj">CNPJ</string>
+    <string name="txtHintCnpj">Digite seu CNPJ</string>
+    <string name="txtRazaoSocial">Razão Social</string>
+    <string name="txtHintRazaoSocial">Razão Social igual do cartão CNPJ</string>
+    <string name="txtDataAbertura">Data de Abertura da Empresa</string>
+    <string name="txtHintDataAbertura">dd/mm/aaaa</string>
+    <string name="txtSimplesNacional">Simples Nacional</string>
+    <string name="txtMei">MEI</string>
+    <string name="btnSalvarConcluir">SALVAR E CONCLUIR</string>
 
     <!-- formulario de cadastro de usuarios -->
 
