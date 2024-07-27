@@ -21,7 +21,7 @@
     <!-- tela de recuparação de senha -->
 
     <string name="txtHintEmailRecuperacao">Digite o e-mail cadastrado...</string>
-    <string name="btnRecuprar">RECUPERAR</string>
+    <string name="btnRecuperar">RECUPERAR</string>
 
 
     <!-- tela novo cliente VIP -->

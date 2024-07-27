@@ -2,33 +2,35 @@ package app.daazi.aluno.appclientevip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 
 import app.daazi.aluno.appclientevip.R;
 import app.daazi.aluno.appclientevip.api.AppUtil;
 import app.daazi.aluno.appclientevip.model.Cliente;
+import app.daazi.aluno.appclientevip.model.ClientePF;
 
-public class ClienteVip extends AppCompatActivity {
+public class ClientePessoaFisicaActivity extends AppCompatActivity {
 
     Cliente novoVip;
+    ClientePF novoClientePF;
+
     private SharedPreferences preferences;
 
-    EditText editPrimeiroNome, editSobrenome;
-    CheckBox ckPessoaFisica;
-    Button btnSalvarContinuar, btnCancelar;
+    EditText editCpf, editNomeCompleto;
+    Button btnSalvarContinuar, btnVoltar, btnCancelar;
 
-    boolean isFormularioOK, isPessoaFisica;
+    boolean isFormularioOK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cliente_vip);
+        setContentView(R.layout.activity_cliente_pessoa_fisica);
 
         initFormulario();
 
@@ -38,33 +40,39 @@ public class ClienteVip extends AppCompatActivity {
 
                 if (isFormularioOK = validarFormulario()) {
 
-                    novoVip.setPrimeiroNome(editPrimeiroNome.getText().toString());
-                    novoVip.setSobreNome(editSobrenome.getText().toString());
-                    novoVip.setPessoaFisica(isPessoaFisica);
+                    novoClientePF.setCpf(editCpf.getText().toString());
+                    novoClientePF.setNomeCompleto(editNomeCompleto.getText().toString());
 
                     salvarSharedPreferences();
 
-                    if(isPessoaFisica){
-                        // Tela de cadastro de CPF
-                    }else{
-                        // Tela de cadastro de CNPJ
-                    }
+                    Intent intent = new Intent(ClientePessoaFisicaActivity.this, LoginActivity.class);
+                    startActivity(intent);
+
                 }
 
             }
         });
 
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ClientePessoaFisicaActivity.this, LoginActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     private void initFormulario() {
 
-        editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
-        editSobrenome = findViewById(R.id.editSobrenome);
-        ckPessoaFisica = findViewById(R.id.ckPessoaFisica);
+        editCpf = findViewById(R.id.editCpf);
+        editNomeCompleto = findViewById(R.id.editNomeCompleto);
         btnSalvarContinuar = findViewById(R.id.btnSalvarContinuar);
+        btnVoltar = findViewById(R.id.btnVoltar);
         btnCancelar = findViewById(R.id.btnCancelar);
 
-        isFormularioOK = false;
+        novoClientePF = new ClientePF();
 
         novoVip = new Cliente();
 
@@ -75,25 +83,19 @@ public class ClienteVip extends AppCompatActivity {
 
         boolean retorno = true;
 
-        if (TextUtils.isEmpty(editPrimeiroNome.getText().toString())) {
-            editPrimeiroNome.setError("*");
-            editPrimeiroNome.requestFocus();
+        if (TextUtils.isEmpty(editCpf.getText().toString())) {
+            editCpf.setError("*");
+            editCpf.requestFocus();
             retorno = false;
         }
 
-        if (TextUtils.isEmpty(editSobrenome.getText().toString())) {
-            editSobrenome.setError("*");
-            editSobrenome.requestFocus();
+        if (TextUtils.isEmpty(editNomeCompleto.getText().toString())) {
+            editNomeCompleto.setError("*");
+            editNomeCompleto.requestFocus();
             retorno = false;
         }
 
         return retorno;
-    }
-
-    public void pessoaFisica(View view){
-
-        isPessoaFisica = ckPessoaFisica.isChecked();
-
     }
 
     private void salvarSharedPreferences() {
@@ -101,9 +103,6 @@ public class ClienteVip extends AppCompatActivity {
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
 
-        dados.putString("primeiroNome", novoVip.getPrimeiroNome());
-        dados.putString("sobreNome", novoVip.getSobreNome());
-        dados.putBoolean("pessoaFisica", novoVip.isPessoaFisica());
         dados.apply();
 
     }
