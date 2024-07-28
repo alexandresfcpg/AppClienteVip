@@ -49,7 +49,7 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
 
                     salvarSharedPreferences();
 
-                    Intent intent = new Intent(ClientePessoaFisicaActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(ClientePessoaFisicaActivity.this, CredencialDeAcessoActivity.class);
                     startActivity(intent);
 
                 }

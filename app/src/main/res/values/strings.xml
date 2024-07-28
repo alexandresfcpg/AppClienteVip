@@ -58,7 +58,7 @@
 
     <!-- formulario de cadastro de usuarios -->
 
-    <string name="txtCadastro">Cadastro</string>
+    <string name="txtFinalizacaoCadastro">Credenciais de Acesso</string>
     <string name="txtNome">Nome</string>
     <string name="txtHintNome">Digite seu primeiro nome...</string>
     <string name="txtEmail">E-mail</string>

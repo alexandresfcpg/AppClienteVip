@@ -28,7 +28,7 @@
             android:name=".view.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".view.CadastroUsuarioActivity"
+            android:name=".view.CredencialDeAcessoActivity"
             android:exported="false" />
         <activity
             android:name=".view.MainActivity"
