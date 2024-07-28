@@ -74,10 +74,11 @@ public class CredencialDeAcessoActivity extends AppCompatActivity {
                             .setTitle("ATENÇÃO!!!!!")
                             .setBackgroundColor(Color.parseColor("#303F9F"))  // for @ColorRes use setBackgroundColorRes(R.color.colorvalue)
                             .setMessage("As senhas digitadas não conferem, por favor, tente novamente!")
+                            .setPositiveBtnBackground(Color.parseColor("#FF4081"))  // for @ColorRes use setPositiveBtnBackgroundRes(R.color.colorvalue)
                             .setPositiveBtnText("CONTINUAR")
-                            .setNegativeBtnBackground(Color.parseColor("#4ECA25"))  // for @ColorRes use setNegativeBtnBackgroundRes(R.color.colorvalue)
                             .isCancellable(true)
                             .setIcon(R.mipmap.ic_launcher_round, View.VISIBLE)
+                            .onPositiveClicked(dialog -> Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show())
                             .build()
                             .show();
                 } else {
@@ -94,7 +95,16 @@ public class CredencialDeAcessoActivity extends AppCompatActivity {
 
     private boolean validarSenha() {
 
-        return false;
+        boolean retorno = false;
+
+        int senhaA, senhaB;
+
+        senhaA = Integer.parseInt(editSenhaA.getText().toString());
+        senhaB = Integer.parseInt(editSenhaB.getText().toString());
+
+        retorno = (senhaA == senhaB);
+
+        return retorno;
     }
 
     public void validarTermo(View view) {
