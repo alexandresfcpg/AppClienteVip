@@ -83,6 +83,8 @@ public class CredencialDeAcessoActivity extends AppCompatActivity {
                             .show();
                 } else {
 
+                    salvarSharedPreferences();
+
                     Intent iMenuPrincipal = new Intent(CredencialDeAcessoActivity.this, LoginActivity.class);
                     startActivity(iMenuPrincipal);
                     finish();
@@ -134,6 +136,17 @@ public class CredencialDeAcessoActivity extends AppCompatActivity {
             editNome.setText(preferences.getString("nomeCompleto", "Verifique os dados!"));
         else
             editNome.setText(preferences.getString("razaoSocial", "Verifique os dados!"));
+
+    }
+
+    private void salvarSharedPreferences() {
+
+        preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
+        SharedPreferences.Editor dados = preferences.edit();
+
+        dados.putString("email", editEmail.getText().toString());
+        dados.putString("senha", editSenhaA.getText().toString());
+        dados.apply();
 
     }
 }

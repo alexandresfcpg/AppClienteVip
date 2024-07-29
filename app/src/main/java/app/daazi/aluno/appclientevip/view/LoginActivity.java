@@ -23,7 +23,7 @@ import app.daazi.aluno.appclientevip.model.Cliente;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Cliente clienteFake;
+    Cliente cliente;
 
     private SharedPreferences preferences;
 
@@ -139,7 +139,7 @@ public class LoginActivity extends AppCompatActivity {
 
         isFormularioOK = false;
 
-        clienteFake = ClienteController.getClienteFake();
+        cliente = new Cliente();
 
         restaurarSharedPreferences();
     }
@@ -151,7 +151,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public boolean validarDadosDoUsuario() {
 
-        return ClienteController.validarDadosDoCliente(clienteFake, editEmail.getText().toString(), editSenha.getText().toString());
+        return ClienteController.validarDadosDoCliente(cliente, editEmail.getText().toString(), editSenha.getText().toString());
     }
 
     private void salvarSharedPreferences() {
@@ -168,6 +168,12 @@ public class LoginActivity extends AppCompatActivity {
 
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         isLembrarSenha = preferences.getBoolean("loginAutomatico", false);
+
+        cliente.setEmail(preferences.getString("email", "teste@teste.com"));
+        cliente.setSenha(preferences.getString("senha", "12345"));
+        cliente.setPrimeiroNome(preferences.getString("primeiroNome", "Cliente"));
+        cliente.setSobreNome(preferences.getString("sobreNome", "Fake"));
+        cliente.setPessoaFisica(preferences.getBoolean("pessoaFisica", true));
 
     }
 }

@@ -16,8 +16,8 @@ public class ClienteController {
         Cliente fake = new Cliente();
         fake.setPrimeiroNome("Alexandre");
         fake.setSobreNome("Augusto");
-        fake.setEmail("alexandre@gmail.com");
-        fake.setSenha("123456");
+        fake.setEmail("alexandresfcpg@yahoo.com.br");
+        fake.setSenha("12345");
         fake.setPessoaFisica(true);
 
         return fake;
