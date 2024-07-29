@@ -29,7 +29,7 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
     EditText editCpf, editNomeCompleto;
     Button btnSalvarContinuar, btnVoltar, btnCancelar;
 
-    boolean isFormularioOK;
+    boolean isFormularioOK, isPessoaFisica;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +49,15 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
 
                     salvarSharedPreferences();
 
-                    Intent intent = new Intent(ClientePessoaFisicaActivity.this, CredencialDeAcessoActivity.class);
-                    startActivity(intent);
+                    Intent intent;
 
+                    if (isPessoaFisica)
+                        intent = new Intent(ClientePessoaFisicaActivity.this, CredencialDeAcessoActivity.class);
+
+                    else
+                        intent = new Intent(ClientePessoaFisicaActivity.this, ClientePessoaJuridicaActivity.class);
+
+                    startActivity(intent);
                 }
 
             }
@@ -137,6 +143,7 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
     private void restaurarSharedPreferences() {
 
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
+        isPessoaFisica = preferences.getBoolean("pessoaFisica", true);
 
     }
 }

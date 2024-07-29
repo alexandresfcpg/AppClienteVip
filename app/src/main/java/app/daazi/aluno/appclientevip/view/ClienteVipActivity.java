@@ -49,17 +49,9 @@ public class ClienteVipActivity extends AppCompatActivity {
 
                     salvarSharedPreferences();
 
-                    if(isPessoaFisica){
+                    Intent intent = new Intent(ClienteVipActivity.this, ClientePessoaFisicaActivity.class);
+                    startActivity(intent);
 
-                        Intent intent = new Intent(ClienteVipActivity.this, ClientePessoaFisicaActivity.class);
-                        startActivity(intent);
-
-                    }else{
-
-                        Intent intent = new Intent(ClienteVipActivity.this, ClientePessoaJuridicaActivity.class);
-                        startActivity(intent);
-
-                    }
                 }
 
             }
@@ -123,7 +115,7 @@ public class ClienteVipActivity extends AppCompatActivity {
         return retorno;
     }
 
-    public void pessoaFisica(View view){
+    public void pessoaFisica(View view) {
 
         isPessoaFisica = ckPessoaFisica.isChecked();
 
