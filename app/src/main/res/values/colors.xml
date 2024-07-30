@@ -3,8 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorTextView">#FFFFFF</color>
+    <color name="colorBranco">#FFFFFF</color>
     <color name="colorBackground">#6B6963</color>
     <color name="colorAzul">#2829FD</color>
+    <color name="colorAzulBotão">#42B1DF</color>
     <color name="colorVerde">#4ECA25</color>
 </resources>

@@ -7,6 +7,15 @@
     <string name="btnVoltar">VOLTAR</string>
 
 
+    <!-- tela de menus -->
+
+    <string name="btnMeusDados">MEUS DADOS</string>
+    <string name="btnAtualizarMeusDados">ATUALIZAR MEUS DADOS</string>
+    <string name="btnExcluirConta">EXCLUIR MINHA CONTA</string>
+    <string name="btnConsultarClientes">CONSULTAR CLIENTES VIP</string>
+    <string name="btnSair">SAIR DO APLICATIVO</string>
+
+
     <!-- formulario de login -->
 
     <string name="txtLogin">Login</string>
