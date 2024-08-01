@@ -42,6 +42,7 @@
         android:text="@string/btnMeusDados"
         android:textColor="@color/colorBranco"
         android:textStyle="bold"
+        android:onClick="meusDados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNomeCliente" />
@@ -57,6 +58,7 @@
         android:text="@string/btnAtualizarMeusDados"
         android:textColor="@color/colorBranco"
         android:textStyle="bold"
+        android:onClick="atualizarMeusDados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMeusDados" />
@@ -72,6 +74,7 @@
         android:text="@string/btnExcluirConta"
         android:textColor="@color/colorBranco"
         android:textStyle="bold"
+        android:onClick="excluirMinhaConta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAtualizarMeusDados" />
@@ -87,6 +90,7 @@
         android:text="@string/btnConsultarClientes"
         android:textColor="@color/colorBranco"
         android:textStyle="bold"
+        android:onClick="consultarClientesVip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnExcluirConta" />
@@ -102,6 +106,7 @@
         android:text="@string/btnSair"
         android:textColor="@color/colorBranco"
         android:textStyle="bold"
+        android:onClick="sairDoAplicativo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnConsultarClientes" />
