@@ -95,22 +95,22 @@ public class MainActivity extends AppCompatActivity {
          */
 
         Log.i(AppUtil.LOG_APP, "*** DADOS CLIENTE ***");
-        Log.i(AppUtil.LOG_APP, "ID: "+cliente.getId());
-        Log.i(AppUtil.LOG_APP, "Primeiro nome: "+cliente.getPrimeiroNome());
-        Log.i(AppUtil.LOG_APP, "Sobrenome: "+cliente.getSobreNome());
-        Log.i(AppUtil.LOG_APP, "E-mail: "+cliente.getEmail());
-        Log.i(AppUtil.LOG_APP, "Senha: "+cliente.getSenha());
+        Log.i(AppUtil.LOG_APP, "ID: " + cliente.getId());
+        Log.i(AppUtil.LOG_APP, "Primeiro nome: " + cliente.getPrimeiroNome());
+        Log.i(AppUtil.LOG_APP, "Sobrenome: " + cliente.getSobreNome());
+        Log.i(AppUtil.LOG_APP, "E-mail: " + cliente.getEmail());
+        Log.i(AppUtil.LOG_APP, "Senha: " + cliente.getSenha());
         Log.i(AppUtil.LOG_APP, "*** DADOS CLIENTE PF ***");
-        Log.i(AppUtil.LOG_APP, "CPF: "+clientePF.getCpf());
-        Log.i(AppUtil.LOG_APP, "Nome completo: "+clientePF.getNomeCompleto());
+        Log.i(AppUtil.LOG_APP, "CPF: " + clientePF.getCpf());
+        Log.i(AppUtil.LOG_APP, "Nome completo: " + clientePF.getNomeCompleto());
 
-        if(!cliente.isPessoaFisica()){
+        if (!cliente.isPessoaFisica()) {
             Log.i(AppUtil.LOG_APP, "*** DADOS CLIENTE PJ ***");
-            Log.i(AppUtil.LOG_APP, "CNPJ: "+ clientePJ.getCnpj());
-            Log.i(AppUtil.LOG_APP, "Razão Social: "+ clientePJ.getRazaoSocial());
-            Log.i(AppUtil.LOG_APP, "Data de abertura: "+ clientePJ.getDataAbertura());
-            Log.i(AppUtil.LOG_APP, "Simples Nacional: "+ clientePJ.isSimplesNacional());
-            Log.i(AppUtil.LOG_APP, "MEI: "+ clientePJ.isMei());
+            Log.i(AppUtil.LOG_APP, "CNPJ: " + clientePJ.getCnpj());
+            Log.i(AppUtil.LOG_APP, "Razão Social: " + clientePJ.getRazaoSocial());
+            Log.i(AppUtil.LOG_APP, "Data de abertura: " + clientePJ.getDataAbertura());
+            Log.i(AppUtil.LOG_APP, "Simples Nacional: " + clientePJ.isSimplesNacional());
+            Log.i(AppUtil.LOG_APP, "MEI: " + clientePJ.isMei());
         }
     }
 
@@ -118,6 +118,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void excluirMinhaConta(View view) {
+
+        FancyAlertDialog.Builder
+                .with(MainActivity.this)
+                .setTitle("EXCLUIR SUA CONTA")
+                .setBackgroundColor(Color.parseColor("#303F9F"))  // for @ColorRes use setBackgroundColorRes(R.color.colorvalue)
+                .setMessage("Confirma a exclusão definitiva da sua conta ?")
+                .setNegativeBtnText("RETORNAR")
+                .setPositiveBtnBackground(Color.parseColor("#FF4081"))  // for @ColorRes use setPositiveBtnBackgroundRes(R.color.colorvalue)
+                .setPositiveBtnText("SIM")
+                .setNegativeBtnBackground(Color.parseColor("#4ECA25"))  // for @ColorRes use setNegativeBtnBackgroundRes(R.color.colorvalue)
+                .isCancellable(true)
+                .setAnimation(Animation.POP)
+                .setIcon(R.mipmap.ic_launcher_round, View.VISIBLE)
+                .onPositiveClicked(new FancyAlertDialogListener() {
+                    @Override
+                    public void onClick(Dialog dialog) {
+                        Toast.makeText(MainActivity.this, cliente.getPrimeiroNome() + " , a sua conta foi excluída!", Toast.LENGTH_SHORT).show();
+
+                        cliente = new Cliente();
+                        clientePF = new ClientePF();
+                        clientePJ = new ClientePJ();
+
+                        //salvarSharedPreferences();
+
+                        finish();
+                        return;
+                    }
+                })
+                .onNegativeClicked(dialog -> Toast.makeText(MainActivity.this, cliente.getPrimeiroNome() + " , obrigado por continuar a usar o nosso aplicativo!", Toast.LENGTH_SHORT).show())
+                .build()
+                .show();
+
     }
 
     public void consultarClientesVip(View view) {
