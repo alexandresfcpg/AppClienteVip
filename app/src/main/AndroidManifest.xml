@@ -13,10 +13,10 @@
         android:theme="@style/Theme.AppClienteVip"
         tools:targetApi="31">
         <activity
-            android:name=".view.LinhaDetalheActivity"
+            android:name=".view.ConsultarClientesActivity"
             android:exported="false" />
         <activity
-            android:name=".view.ConsultarClientesActivity"
+            android:name=".view.LinhaDetalheActivity"
             android:exported="false" />
         <activity
             android:name=".view.ClientePessoaFisicaActivity"
