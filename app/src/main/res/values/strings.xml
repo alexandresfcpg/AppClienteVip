@@ -16,6 +16,11 @@
     <string name="btnSair">SAIR DO APLICATIVO</string>
 
 
+    <!-- tela de exibição da lista de clientes -->
+
+    <string name="txtCliente">Cliente</string>
+
+
     <!-- formulario de login -->
 
     <string name="txtLogin">Login</string>
