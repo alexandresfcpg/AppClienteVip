@@ -1,6 +1,8 @@
 package app.daazi.aluno.appclientevip.view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
@@ -17,10 +19,14 @@ public class ConsultarClientesActivity extends AppCompatActivity {
     ClienteAdapter adapter;
     Cliente obj;
 
+    RecyclerView rvClientesVip;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultar_clientes);
+
+        rvClientesVip = findViewById(R.id.rvClientesVip);
 
         clientes = new ArrayList<>();
 
@@ -35,5 +41,9 @@ public class ConsultarClientesActivity extends AppCompatActivity {
         }
 
         adapter = new ClienteAdapter(clientes, getApplicationContext());
+
+        rvClientesVip.setAdapter(adapter);
+
+        rvClientesVip.setLayoutManager(new LinearLayoutManager(this));
     }
 }

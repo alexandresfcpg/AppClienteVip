@@ -3,6 +3,7 @@ package app.daazi.aluno.appclientevip.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -212,6 +213,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void consultarClientesVip(View view) {
+
+        Intent intent = new Intent(MainActivity.this, ConsultarClientesActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void sairDoAplicativo(View view) {
