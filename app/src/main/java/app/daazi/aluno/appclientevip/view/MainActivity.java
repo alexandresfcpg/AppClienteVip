@@ -15,6 +15,9 @@ import com.shashank.sony.fancydialoglib.Animation;
 import com.shashank.sony.fancydialoglib.FancyAlertDialog;
 import com.shashank.sony.fancydialoglib.FancyAlertDialogListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import app.daazi.aluno.appclientevip.R;
 import app.daazi.aluno.appclientevip.api.AppUtil;
 import app.daazi.aluno.appclientevip.model.Cliente;
@@ -31,12 +34,37 @@ public class MainActivity extends AppCompatActivity {
 
     private SharedPreferences preferences;
 
+    List<Cliente> clientes;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initFormulario();
+
+        buscarListaDeClientes();
+    }
+
+    private void buscarListaDeClientes() {
+
+        clientes = new ArrayList<>();
+        clientes.add(cliente);
+
+        Cliente novoCliente01 = new Cliente();
+        novoCliente01.setPrimeiroNome("Novo Cliente 01");
+        clientes.add(novoCliente01);
+
+        Cliente novoCliente02 = new Cliente();
+        novoCliente02.setPrimeiroNome("Novo Cliente 02");
+        clientes.add(novoCliente02);
+
+        for (Cliente obj: clientes ) {
+
+            Log.i(AppUtil.LOG_APP,"Obj: "+obj.getPrimeiroNome());
+            
+        }
+
     }
 
     private void initFormulario() {
