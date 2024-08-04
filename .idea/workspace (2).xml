@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cadastro_usuario.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cliente_pessoa_fisica.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cliente_pessoa_juridica.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cliente_vip.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_clientes.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_linha_detalhe.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_recuperar_senha.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+        <config>
+          <theme>@style/Theme.AppClienteVip</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b617919e-b2a7-47e0-81d5-9e8e2ea9692b" name="Changes" comment="Finalizando a programação para popular os itens na RecyclerView.">
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/api/AppUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/api/AppUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/api/ClienteAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/api/ClienteAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/model/ClientePF.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/model/ClientePF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/model/ClientePJ.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/model/ClientePJ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/ClientePessoaFisicaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/ClientePessoaFisicaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/ClientePessoaJuridicaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/ClientePessoaJuridicaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/ClienteVipActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/ClienteVipActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/ConsultarClientesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/ConsultarClientesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/CredencialDeAcessoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/CredencialDeAcessoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/RecuperarSenhaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/RecuperarSenhaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevip/view/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\alexa\.android\avd\Small_Phone_API_26_2.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Google/AndroidStudio2023.1/device-explorer/Small Phone API 26/_/data/data/app.daazi.aluno.appclientevip/shared_prefs/app_cliente_vip_pref.xml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2ji05KlsHkAkv4XugAmq0oACgRA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "android-custom-viewC:/Users/alexa/AppData/Local/Android/Sdk/sources/android-34/android/view/View.java_SELECTED": "View",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/alexa/ProjetosAndroid/Backup",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "show.migrate.to.gradle.popup": "false"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="android.template.-471920631">
+      <recent name="app.daazi.aluno.appclientevip.view" />
+    </key>
+    <key name="android.template.-1762095024">
+      <recent name="app.daazi.aluno.appclientevip" />
+    </key>
+    <key name="android.template.-366371269">
+      <recent name="app.daazi.aluno.appclientevip" />
+    </key>
+    <key name="android.template.-364659868">
+      <recent name="app.daazi.aluno.appclientevip.view" />
+    </key>
+    <key name="android.template.2130506462">
+      <recent name="app.daazi.aluno.appclientevip" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="AppClienteVipDB.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b617919e-b2a7-47e0-81d5-9e8e2ea9692b" name="Changes" comment="" />
+      <created>1721854405680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721854405680</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Criação Tela Splash">
+      <option name="closed" value="true" />
+      <created>1721856293335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721856293335</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implementando o uso da tela spalsh, trcoando pela tela principal">
+      <option name="closed" value="true" />
+      <created>1721857729793</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721857729793</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implementando o uso da tela spalsh, trcoando pela tela principal">
+      <option name="closed" value="true" />
+      <created>1721857877058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721857877058</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implementando o uso da tela spalsh, trcoando pela tela principal">
+      <option name="closed" value="true" />
+      <created>1721858610218</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721858610218</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Criando a tela de login">
+      <option name="closed" value="true" />
+      <created>1721867101080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721867101080</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Programando a tela de login">
+      <option name="closed" value="true" />
+      <created>1721929195192</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721929195192</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Criando a camada model e as classes Cliente, ClientePF e Cliente PJ">
+      <option name="closed" value="true" />
+      <created>1721930683867</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721930683867</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Programando a tela de login para evitar que o usuario clique em Acessar sem digitar dados.">
+      <option name="closed" value="true" />
+      <created>1721932673482</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721932673482</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Criação da camada controller, da classe ClienteController e teste de validação de email e senha na tela de login.">
+      <option name="closed" value="true" />
+      <created>1721934181374</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721934181374</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Criação dos métodos para salvar e restaurar os dados salvos no SharedPreferences.">
+      <option name="closed" value="true" />
+      <created>1721936430972</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721936430972</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Criação de um cliente fake para testar a validação da tela de login e também teste do check Lembrar, que quando ativado, o app entre direto na tela principal.">
+      <option name="closed" value="true" />
+      <created>1721938581391</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721938581391</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Criação da classe Cliente Vip e do layout dela, além do teste do botão Seja VIP.">
+      <option name="closed" value="true" />
+      <created>1721943580624</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721943580625</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Início da programação da tela Cliente VIp.">
+      <option name="closed" value="true" />
+      <created>1721945678973</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721945678973</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Alguns testes da tela Cliente VIp.">
+      <option name="closed" value="true" />
+      <created>1721946244623</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721946244623</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Criação das telas de Cadastro de Cliente Pessoa Juridica e Recupração de Senha">
+      <option name="closed" value="true" />
+      <created>1722107206926</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722107206926</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Criação da tela de Cadastro de Cliente Pessoa Física">
+      <option name="closed" value="true" />
+      <created>1722107757565</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722107757565</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Programação das telas de Cadastro de Cliente Pessoa Física Pessoa Juridica e Recuperação de Senha.">
+      <option name="closed" value="true" />
+      <created>1722112523294</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722112523294</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Testes da navegação entre as telas e pequenas correções.">
+      <option name="closed" value="true" />
+      <created>1722116003913</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722116003913</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implementando o pop up para políticas de privacidade e termos de uso, com instalação de biblioteca externa.">
+      <option name="closed" value="true" />
+      <created>1722119605200</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722119605200</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Implementando o método do botão Cancelar em todas as telas que o contem.">
+      <option name="closed" value="true" />
+      <created>1722122895043</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722122895043</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Implementando o SharedPreferences nas telas de Cliente Pessoa Física e Cliente Pessoa Jurídica..">
+      <option name="closed" value="true" />
+      <created>1722124057569</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722124057569</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Programação da tela de Credenciais de Usuario.">
+      <option name="closed" value="true" />
+      <created>1722193570386</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722193570386</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Implementando o método para Validar Senha na classe Credenciais de Ususario.">
+      <option name="closed" value="true" />
+      <created>1722194722895</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1722194722895</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Testando na prática o cadastro de clientes PF e PJ.">
+      <option name="closed" value="true" />
+      <created>1722212382085</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1722212382085</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Corrigindo erros na hora de cadastrar clientes PF e PJ.">
+      <option name="closed" value="true" />
+      <created>1722296024454</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722296024454</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Criando o layout do menu principal e iniciando a programação na classe MainActivity.">
+      <option name="closed" value="true" />
+      <created>1722299647631</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722299647631</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Programando o menu Sair do Aplicativo e testando o seu funcionamento.">
+      <option name="closed" value="true" />
+      <created>1722551850563</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1722551850563</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Programando o menu Meus Dados e testando o seu funcionamento.">
+      <option name="closed" value="true" />
+      <created>1722556866992</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1722556866992</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Programando o menu Excluir Minha Conta e testando o seu funcionamento.">
+      <option name="closed" value="true" />
+      <created>1722557610396</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1722557610396</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Programando o menu Atualizar Meus Dados e testando o seu funcionamento. Também foi programado o TextView do meu para aparecer o nome do usuário.">
+      <option name="closed" value="true" />
+      <created>1722638033699</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1722638033699</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Programando o menu Consultar Cliente Vip com a criação de uma array e testando o seu funcionamento.">
+      <option name="closed" value="true" />
+      <created>1722714626145</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1722714626146</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Criação dos layouts para exibir o conteúdo da lista de clientes.">
+      <option name="closed" value="true" />
+      <created>1722716412105</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1722716412105</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Criação da classe ClienteAdapter e programações nessa tela e na ConsultarClientesActivity.">
+      <option name="closed" value="true" />
+      <created>1722723154892</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722723154892</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Finalizando a programação para popular os itens na RecyclerView.">
+      <option name="closed" value="true" />
+      <created>1722725046043</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1722725046043</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criação dos métodos para salvar e restaurar os dados salvos no SharedPreferences." />
+    <MESSAGE value="Criação de um cliente fake para testar a validação da tela de login e também teste do check Lembrar, que quando ativado, o app entre direto na tela principal." />
+    <MESSAGE value="Criação da classe Cliente Vip e do layout dela, além do teste do botão Seja VIP." />
+    <MESSAGE value="Início da programação da tela Cliente VIp." />
+    <MESSAGE value="Alguns testes da tela Cliente VIp." />
+    <MESSAGE value="Criação das telas de Cadastro de Cliente Pessoa Juridica e Recupração de Senha" />
+    <MESSAGE value="Criação da tela de Cadastro de Cliente Pessoa Física" />
+    <MESSAGE value="Programação das telas de Cadastro de Cliente Pessoa Física Pessoa Juridica e Recuperação de Senha." />
+    <MESSAGE value="Testes da navegação entre as telas e pequenas correções." />
+    <MESSAGE value="Implementando o pop up para políticas de privacidade e termos de uso, com instalação de biblioteca externa." />
+    <MESSAGE value="Implementando o método do botão Cancelar em todas as telas que o contem." />
+    <MESSAGE value="Implementando o SharedPreferences nas telas de Cliente Pessoa Física e Cliente Pessoa Jurídica.." />
+    <MESSAGE value="Programação da tela de Credenciais de Usuario." />
+    <MESSAGE value="Implementando o método para Validar Senha na classe Credenciais de Ususario." />
+    <MESSAGE value="Testando na prática o cadastro de clientes PF e PJ." />
+    <MESSAGE value="Corrigindo erros na hora de cadastrar clientes PF e PJ." />
+    <MESSAGE value="Criando o layout do menu principal e iniciando a programação na classe MainActivity." />
+    <MESSAGE value="Programando o menu Sair do Aplicativo e testando o seu funcionamento." />
+    <MESSAGE value="Programando o menu Meus Dados e testando o seu funcionamento." />
+    <MESSAGE value="Programando o menu Excluir Minha Conta e testando o seu funcionamento." />
+    <MESSAGE value="Programando o menu Atualizar Meus Dados e testando o seu funcionamento. Também foi programado o TextView do meu para aparecer o nome do usuário." />
+    <MESSAGE value="Programando o menu Consultar Cliente Vip com a criação de uma array e testando o seu funcionamento." />
+    <MESSAGE value="Criação dos layouts para exibir o conteúdo da lista de clientes." />
+    <MESSAGE value="Criação da classe ClienteAdapter e programações nessa tela e na ConsultarClientesActivity." />
+    <MESSAGE value="Finalizando a programação para popular os itens na RecyclerView." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizando a programação para popular os itens na RecyclerView." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/view/ConsultarClientesActivity.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/app/daazi/aluno/appclientevipdb/api/ClienteAdapter.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
